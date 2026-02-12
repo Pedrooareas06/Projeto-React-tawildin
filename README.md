@@ -1,143 +1,151 @@
-Perfeito. Vou criar um README profissional, organizado como projeto de portfólio (clean, técnico e objetivo).
-
-Você pode salvar como:
-README.md
-
 📅 Gestão de Feriados
 
-Sistema de gestão de feriados desenvolvido com React + TypeScript + Vite, utilizando Tailwind CSS, shadcn/ui e Framer Motion para construção de uma interface moderna, responsiva e animada.
 
-🚀 Tecnologias Utilizadas
 
-⚛️ React
 
-🟦 TypeScript
 
-⚡ Vite
 
-🎨 Tailwind CSS (v4)
 
-🧩 shadcn/ui
 
-🎞️ Framer Motion
 
-🧠 Hooks customizados
 
-📌 Funcionalidades
-✅ Cadastro de Feriado
 
-Data (YYYY-MM-DD)
 
-Nome do Feriado
+Sistema moderno para gestão de feriados corporativos, desenvolvido com foco em arquitetura limpa, componentização e experiência do usuário.
 
-Indicador se é Trabalhado (Sim/Não)
+Projeto desenvolvido para prática avançada de React + TypeScript + UI moderna.
+
+🚀 Preview
+
+Em breve: GIF demonstrando cadastro, filtro e exclusão.
+
+✨ Funcionalidades
+📌 Cadastro
+
+Inserção de novo feriado
 
 Validação de formulário
+
+Conversão automática "S" | "N" → boolean
 
 Reset automático após inserção
 
 🔍 Filtros Dinâmicos
 
-Filtro por Data
+Filtro por Data específica
 
 Filtro por Nome (contém)
 
-Filtro por Trabalhado (Todos / S / N)
+Filtro por Trabalhado (Todos / Sim / Não)
 
-Atualização em tempo real
+Atualização em tempo real com useMemo
 
 📊 Listagem
 
-Tabela estilizada com shadcn
+Tabela estilizada com shadcn/ui
 
-Exibição formatada de data (DD/MM/YYYY)
+Data formatada (DD/MM/YYYY)
 
-Indicador visual de Trabalhado
+Indicador visual de status
 
-🗑️ Exclusão
+Animações suaves na renderização
 
-Botão Deletar
+🗑 Exclusão
 
-Dialog de confirmação
+Modal de confirmação (Dialog)
 
-Remoção com atualização automática da lista
+Remoção controlada via estado
 
-🧱 Estrutura do Projeto
+Atualização automática da lista
+
+🧠 Arquitetura
+
+O projeto segue separação clara de responsabilidades:
+
 src/
  ├── pages/
  │    └── feriados/
- │         ├── useFeriados.ts
+ │         ├── useFeriados.ts        # Regra de negócio
  │         ├── ContainerPrincipal.tsx
- │         └── components/
+ │         └── components/           # UI isolada
  │              ├── FiltrosFeriados.tsx
  │              ├── FormFeriado.tsx
  │              ├── TableFeriado.tsx
  │              └── DialogDeleteFeriado.tsx
-🧠 Arquitetura
+🔎 Estado Derivado
 
-O projeto segue separação clara entre:
-
-Lógica de negócio → useFeriados.ts
-
-UI → Components
-
-Estado derivado → useMemo
-
-Interações → Handlers tipados com generics
-
-A lista exibida na tabela é derivada via:
+A lista filtrada é calculada com:
 
 const itemsFiltrados = useMemo(...)
 
-Isso garante:
+Garantindo:
 
 Performance
 
-Organização
-
 Código previsível
 
-🎨 Design
+Separação entre estado bruto e estado visual
 
-Layout responsivo (mobile-first)
+🎨 UI & UX
 
-Componentização limpa
+Layout responsivo (Mobile First)
 
-Espaçamento consistente com Tailwind
+Grid adaptável com Tailwind
 
-Animações suaves com Framer Motion
+Componentes acessíveis (shadcn/ui)
 
-Uso de componentes acessíveis do shadcn/ui
+Microinterações com Framer Motion
 
-▶️ Como Rodar o Projeto
+Feedback visual claro (validação e ações destrutivas)
+
+⚙️ Tecnologias
+Tecnologia	Finalidade
+React	Estrutura da aplicação
+TypeScript	Tipagem forte
+Vite	Build e dev server
+Tailwind CSS v4	Estilização
+shadcn/ui	Componentes acessíveis
+Framer Motion	Animações
+▶️ Como Executar
 # Instalar dependências
 npm install
 
 
-# Rodar ambiente de desenvolvimento
+# Rodar servidor de desenvolvimento
 npm run dev
-📈 Próximas Melhorias
 
-Integração com API REST
+A aplicação estará disponível em:
 
-Paginação
+http://localhost:5173
+📈 Roadmap
 
-Ordenação de colunas
+ Integração com API REST
 
-Edição de feriado
+ Persistência em banco de dados
 
-Persistência em banco
+ Paginação
 
-Testes unitários
+ Ordenação por colunas
+
+ Edição de feriado
+
+ Testes unitários
+
+📚 Conceitos Aplicados
+
+Custom Hooks
+
+Componentização desacoplada
+
+Tipagem com Generics
+
+Estado derivado com useMemo
+
+Separação entre regra de negócio e UI
+
+Padrão de organização escalável
 
 👨‍💻 Autor
 
-Projeto desenvolvido como prática de:
-
-Componentização avançada
-
-Custom hooks
-
-Organização de estado
-
-UI moderna com shadcn
+Desenvolvido por Pedro
+Projeto focado em evolução profissional como Desenvolvedor Front-end.
