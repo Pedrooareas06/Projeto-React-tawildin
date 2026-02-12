@@ -60,20 +60,6 @@ Atualização automática da lista
 
 🧠 Arquitetura
 
-O projeto segue separação clara de responsabilidades:
-
-src/
- ├── pages/
- │    └── feriados/
- │         ├── useFeriados.ts        # Regra de negócio
- │         ├── ContainerPrincipal.tsx
- │         └── components/           # UI isolada
- │              ├── FiltrosFeriados.tsx
- │              ├── FormFeriado.tsx
- │              ├── TableFeriado.tsx
- │              └── DialogDeleteFeriado.tsx
-🔎 Estado Derivado
-
 A lista filtrada é calculada com:
 
 const itemsFiltrados = useMemo(...)
